@@ -10,7 +10,7 @@
 
 A proposal for a successor format to the "Well Known Binary" (WKB) encoding of geometries, designed for simpler and more efficient geospatial processing in the context of modern data systems.
 
-## Overview
+## Overview, and the problem with WKB
 
 The "Well Known Binary" (WKB) format is widely used for serializing "Simple Features" style geometries into binary. It remains even more relevant today as its ubiquity has made it part of modern standards that deal with large-scale data systems, such as `Parquet`, `GeoParquet`, `Iceberg V3` and `Spark`. However, while WKB is well suited as a transport format, it has some deficiencies that make it less suitable as an execution format in high-performance analytical processing.
 
@@ -20,7 +20,7 @@ The "Well Known Binary" (WKB) format is widely used for serializing "Simple Feat
 
 The Better Known Binary (BKB) format aims to address these issues by providing a more straightforward and efficient way to encode geometries, while ensuring that it can be gradually adopted on top of WKB.
 
-## Format
+## The BKB Format
 
 ### Geometry Header
 BKB supports the 7 standard geometry types, that is:
