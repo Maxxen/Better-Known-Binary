@@ -1,3 +1,11 @@
+<div align="center">
+  <picture>
+    <img alt="BKB Logo" src="logo.png" height="200">
+  </picture>
+</div>
+<br>
+
+
 # Better Known Binary (BKB)
 
 A proposal for a successor format to the "Well Known Binary" (WKB) encoding of geometries, designed for simpler and more efficient geospatial processing in the context of modern data systems.
