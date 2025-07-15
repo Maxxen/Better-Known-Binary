@@ -46,7 +46,7 @@ Each BKB geometry encoded geometry always starts with the following 8-byte "head
 
 #### 1st byte: BKB identifier magic byte
 
-The "magic byte" 0x02 at the first byte indicates that this is a BKB format. This allows for easy identification of the BKB encoding and ensures that parsers can distinguish it from the WKB format, which always starts with 0x00 or 0x01 based on the byte order. An existing robust WKB parser should therefore not misinterpret BKB data, as it should reject the first byte as an invalid byte order indicator.
+The "magic byte" 0x02 at the first byte indicates that this is a BKB format. This allows for easy identification of the BKB encoding and ensures that parsers can distinguish it from the WKB format, which always starts with 0x00 or 0x01 based on the byte order. An existing robust WKB parser should therefore not misinterpret BKB data, as it should reject the first byte as an invalid byte order indicator. Similarly, the other way around, A BKB parser can identify a WKB-encoded geometry and "fall back" to WKB parsing.
 
 #### 2nd byte: reserved
 
