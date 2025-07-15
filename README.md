@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-    <img alt="BKB Logo" src="logo.png" height="200">
+    <img alt="BKB Logo" src="logo.png" height="300">
   </picture>
 </div>
 <br>
